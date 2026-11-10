@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #89f7fe, #66a6ff);
+            text-align: center;
+            padding: 50px;
+        }
+
+        .profile {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile">
+
+        <h1>Shweta Santosh Thorat</h1>
+
+        <p>Hello! I am a BCA Third Year Student.</p>
+
+        <h2>My Skills</h2>
+
+        <p>HTML | CSS | Java | Python | SQL</p>
+
+        <button onclick="showMessage()">Click Me</button>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+            "Welcome to my Profile! Thank You for Visiting.";
+        }
+    </script>
+
+</body>
+</html>
